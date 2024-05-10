@@ -147,13 +147,22 @@ void AccountListPage::on_actionAddMicrosoft_triggered()
 
 void AccountListPage::on_actionAddOffline_triggered()
 {
-    if (!m_accounts->anyAccountIsValid()) {
-        QMessageBox::warning(this, tr("Error"),
-                             tr("You must add a Microsoft account that owns Minecraft before you can add an offline account."
-                                "<br><br>"
-                                "If you have lost your account you can contact Microsoft for support."));
-        return;
-    }
+    // Cracked by untether for ReJail!
+
+    
+    // if (!m_accounts->anyAccountIsValid()) {
+    //     QMessageBox::warning(this, tr("Error"),
+    //                          tr("You must add a Microsoft account that owns Minecraft before you can add an offline account."
+    //                             "<br><br>"
+    //                             "If you have lost your account you can contact Microsoft for support."));
+    //     return;
+    // }
+
+    // HERE WE GOOOOOO!
+    // Thanks ******5588 for bulling me and being awesome!
+
+    // If i will have enough time i will crack Demo.
+
 
     MinecraftAccountPtr account =
         OfflineLoginDialog::newAccount(this, tr("Please enter your desired username to add your offline account."));
